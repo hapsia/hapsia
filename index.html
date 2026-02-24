@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ΧΑΨΙΑ — The Street Food Project | Pangrati, Athens</title>
+  <meta name="description" content="ΧΑΨΙΑ — The Street Food Project. Gourmet street food sandwiches in Pangrati, Athens.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="logo-placeholder" aria-label="ΧΑΨΙΑ logo">
+        <!-- Replace this div with an <img src="assets/logo.png" alt="ΧΑΨΙΑ logo"> when ready -->
+        <span class="logo-text">ΧΑΨΙΑ</span>
+      </div>
+      <p class="tagline">The Street Food Project</p>
+      <p class="location">Pangrati, Athens 🇬🇷</p>
+      <a href="#menu" class="cta-button">Δες το Μενού</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Ποιοι είμαστε</h2>
+      <p>
+        Gourmet street food στην καρδιά του Παγκρατίου. Φτιάχνουμε σάντουιτς με αγάπη,
+        φρέσκα υλικά και χειροποίητες σάλτσες. Όλα τα κρέατα μας είναι νωπά και
+        η επεξεργασία τους γίνεται εξ ολοκλήρου στην κουζίνα μας.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Μενού</h2>
+      <p>Ρίξε μια ματιά στις δημιουργίες μας.</p>
+      <a href="assets/menu.pdf" target="_blank" rel="noopener" class="menu-button">
+        📄 Άνοιξε το Μενού (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section class="hours" id="hours">
+    <div class="container">
+      <h2>Ωράριο</h2>
+      <ul class="hours-list">
+        <li><span>Δευτέρα</span><span>Κλειστά</span></li>
+        <li><span>Τρίτη – Πέμπτη</span><span>12:00 – 22:00</span></li>
+        <li><span>Παρασκευή – Σάββατο</span><span>12:00 – 23:00</span></li>
+        <li><span>Κυριακή</span><span>12:00 – 22:00</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Find Us -->
+  <section class="find-us" id="find-us">
+    <div class="container">
+      <h2>Βρες μας</h2>
+      <p class="address">📍 Παγκράτι, Αθήνα</p>
+      <a href="https://maps.google.com/?q=Pangrati+Athens+Greece" target="_blank" rel="noopener" class="map-link">
+        Άνοιγμα στο Google Maps →
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact & Socials -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Επικοινωνία</h2>
+      <ul class="contact-list">
+        <li>
+          <a href="tel:+302101234567">📞 210 123 4567</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hapsia.sfp/" target="_blank" rel="noopener">📸 @hapsia.sfp</a>
+        </li>
+        <li>
+          <a href="mailto:hello@hapsia.gr">✉️ hello@hapsia.gr</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ΧΑΨΙΑ — The Street Food Project</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener("click", function (e) {
+        var target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
